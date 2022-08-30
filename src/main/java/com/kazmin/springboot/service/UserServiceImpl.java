@@ -8,9 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-@ComponentScan("com.kazmin.springboot.dao")
 public class UserServiceImpl implements UserService {
-    UserDao userDao;
+    private UserDao userDao;
     @Autowired
     public UserServiceImpl(UserDao userDAO) {
         this.userDao = userDAO;
